@@ -1,2 +1,2 @@
-# Li-s-repository
-In this repository, I will record my scientific research prosess and study outcomes!
+# 跟李沐大神学DL
+Pytorch版
