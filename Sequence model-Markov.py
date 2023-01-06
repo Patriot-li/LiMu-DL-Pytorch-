@@ -66,7 +66,7 @@ plt.show()
 
 '''自定义预测步数'''
 pred_step = 4
-features = torch.zeros((T - tau - pred_step + 1, tau + pred_step)) #列数好确定先确定列数，然后倒退行数，行数由最后一个数往前推
+features = torch.zeros((T - tau - pred_step + 1, tau + pred_step)) #列数好确定先确定列数，然后倒推行数，行数由最后一个数往前推
 for i in range(tau):
     features[:, i] = x[i:i + T - tau - pred_step + 1]
 for i in range(tau, tau + pred_step):
